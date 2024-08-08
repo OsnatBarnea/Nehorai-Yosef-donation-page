@@ -4,6 +4,7 @@ const donateSpan = document.getElementById("donateSpan");
 const donateDetails = document.getElementById("donateDetails");
 const video = document.getElementById("video") as HTMLVideoElement;
 const article = document.getElementById("article");
+const explanation = document.getElementById("explanation");
 
 const imagesSrc: string[] = ["assets/images/Nehorai_1.jpg", "assets/images/Nehorai_2.jpg", "assets/images/Nehorai_3.jpg", "assets/images/Nehorai_4.jpg", "assets/images/Nehorai_5.jpg"];
 
