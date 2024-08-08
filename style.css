@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    font-family: Abraham;
+    background-color: #a5d9d9;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Abraham;
+    src: url(assets/fonts/Abraham-Regular.ttf);
+}
+
+.gridDiv {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35% 15% 50%;
+    row-gap: 20px;
+}
+
+.moreInfo, #videoDiv {
+    grid-row: span 2;
+}
+
+.header {
+    grid-column: span 2;
+}
+
+.header {
+    background-color: #90b3d5;
+    border-radius: 60px;
+}
+
+#switchImages {
+    margin-top: 10px;
+    max-height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+
+#video {
+    height: 420px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.treatmentCost, #donateDetails, #article {
+    font-size: 25px;
+}
+
+#donateDetails {
+    color: black;
+}
+
+#article {
+    margin-right: 170px;
+    margin-left: 170px;
+    margin-top: 0;
+    padding: 5px;
+    color: white;
+    background-color: #386694;
+    border-radius: 10px;
+}
+
+#donate {
+    margin-top: 20px;
+    margin-right: 70px;
+    margin-left: 70px;
+    background-color: #29a3a3;
+    color: white;
+    padding: 8px;
+    font-size: 50px;
+    border-radius: 60px;
+}
+
+iframe {
+    width: 55%;
+    margin-top: 20px;
+}
+
+.moreInfo {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6fc3c3;
+    border-radius: 60px;
+}
+
+.videoButtons {
+    padding-bottom: 500px;
+}
+
+.explanation{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        /* padding: 20px; */
+        overflow:scroll ;
+    }
+    .gridDiv {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 15% 30% 30%;
+        row-gap: 15px;
+    }
+    
+    .header{
+        align-content: center;
+        height: 100%;
+        width: 65%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #videoDiv, #donate{
+        z-index:1;
+    }
+    
+    .moreInfo{
+        z-index:2;
+    }
+
+}
