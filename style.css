@@ -66,6 +66,20 @@ h2 {
     color: #386694;
 }
 
+#donateDetails {
+    display: block;
+    position: absolute; /* Adjust as needed */
+    top: 210;
+    left: 300;
+    right:300;
+    bottom: 800;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust as needed */
+    color: white;
+    border-radius: 20px;
+    padding: 7px;
+    z-index: 1001; /* Adjust as needed */
+  }
+
 #article {
     margin-right: 170px;
     margin-left: 170px;
