@@ -2,7 +2,6 @@
 const switchImages = document.getElementById("switchImages") as HTMLImageElement;
 const donateSpan = document.getElementById("donateSpan");
 const donateDetails = document.getElementById("donateDetails");
-const video = document.getElementById("video") as HTMLVideoElement;
 const article = document.getElementById("article");
 const explanation = document.getElementById("explanation");
 
@@ -41,10 +40,14 @@ donateSpan.addEventListener("mouseleave", () => {
     donateDetails.innerHTML = "";
 });
 
-//the video starts when the page is uploaded
-window.onload = function () {
-    video.play();
-};
+// For mobile view - simulate mouseenter
+donateSpan.addEventListener("touchstart", () => {
+    donateSpan.dispatchEvent(new Event("mouseenter"));
+  });
+  
+  donateSpan.addEventListener("touchend", () => {
+    donateSpan.dispatchEvent(new Event("mouseleave"));
+  });
 
 article.addEventListener("click", () => {
     window.open("https://www.rarediseaseadvisor.com/features/sarepta-looks-to-expand-new-gene-therapy-to-more-patients-with-dmd/", "_blank");
